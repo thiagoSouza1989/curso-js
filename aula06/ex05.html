@@ -17,14 +17,24 @@
     <h1>Iniciando estudos DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
 
     <script>
         var corpo = window.document.body
-        var p2 = window.document.getElementsByName('p')[1]
-        corpo.style.background = 'black'
+        var p2 = window.document.getElementsByTagName('p')[1]
+        corpo.style.background = 'orange'
         corpo.style.color = 'white'
         p2.style.color = 'blue'
+        document.write('Está escrito assim: ' + p2.innerHTML)
+
+        /*var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        //d.innerText = 'Que horas são?'
+        document.getElementById('msg').innerText = 'Olá!!!'
+        document.getElementById('msg').style.color ='yellow'*/
+
+        var d = document.querySelector('div#msg')
+        d.style.background = 'green'
 
         //window.document.write(window.navigator.appName) escreve nome do navegador
         //window.document.write(window.document.URL)// mostra URL q está acessando.
