@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu suspenso</title>
+</head>
+<body>
+    <label for="frutas">Escolha uma fruta:</label>
+
+	<select id="frutas">
+		<option value="">Selecione uma opção</option>
+		<option value="maca">Maçã</option>
+		<option value="banana">Banana</option>
+		<option value="laranja">Laranja</option>
+		<option value="uva">Uva</option>
+	</select>
+
+	<script>
+		const select = document.getElementById("frutas");
+		select.addEventListener("change", function() {
+			const selectedOption = select.options[select.selectedIndex];
+			//alert("Você selecionou " + selectedOption.text);
+		});
+	</script>
+</body>
+</html>
