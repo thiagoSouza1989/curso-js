@@ -76,7 +76,9 @@ function verificar(){
                 document.body.style.background = '#325b79'
             }
 
-        }else if(fsex[1].checked){
+        }
+        //feminino
+        else if(fsex[1].checked){
             gênero = 'Mulher'
             if(idade >=0 && idade <=3){
                 //criança
