@@ -5,15 +5,24 @@ function carregar(){
     var hora = data.getHours()
     var minuto = data.getMinutes()
 
-    //var hora = 11
+    var hora = 17
     msg.innerHTML = `Agora são ${hora}:${minuto}`
-    if (hora >= 0 && hora <12){
-        img.src = 'imagens/manha.jpeg'
-        document.body.style.background = '#FFD452'
-    }else if(hora >= 12 && hora <=18){
-        img.src = 'imagens/tarde.jpeg'
+    if (hora >= 0 && hora <5){
+        img.src = 'imagens/madrugada.jpeg'
+        document.body.style.background = '#091916'
+    }else if(hora >= 5 && hora <=8){
+        img.src = 'imagens/amanhecer.jpeg'
+        document.body.style.background = '#fddd4a'
+    }
+    else if(hora >= 9 && hora <=17){
+        img.src = 'imagens/tarde.jpg'
+        document.body.style.background = '#0675e3'
+    }
+    else if(hora > 17 && hora <19){
+        img.src = 'imagens/crepusculo.jpeg'
         document.body.style.background = '#5A5279'
-    }else{
+    }
+    else{
         img.src = 'imagens/noite.jpeg'
         document.body.style.background = '#1A363C'
     }
