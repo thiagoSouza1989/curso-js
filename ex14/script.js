@@ -5,7 +5,7 @@ function carregar(){
     var hora = data.getHours()
     var minuto = data.getMinutes()
 
-    var hora = 17
+    //var hora = 17
     msg.innerHTML = `Agora são ${hora}:${minuto}`
     if (hora >= 0 && hora <5){
         img.src = 'imagens/madrugada.jpeg'
@@ -15,7 +15,7 @@ function carregar(){
         document.body.style.background = '#fddd4a'
     }
     else if(hora >= 9 && hora <=17){
-        img.src = 'imagens/tarde.jpg'
+        img.src = 'imagens/dia.jpg'
         document.body.style.background = '#0675e3'
     }
     else if(hora > 17 && hora <19){
