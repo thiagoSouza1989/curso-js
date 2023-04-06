@@ -5,37 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            background-color: black;
-        }
-        section{
-            display: grid;
-            place-items: center;
-            background-color: yellow;
-            width: 1000px;
-            height: 1000px;
-        }
-        div{
-            display: grid;
-            place-items: center;
-            background-color: blue;
-            width: 400px;
-            height: 400px;
-        }
-        h1{
-            color: white;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <section>
-            <div>
-                <h1>Olá</h1>
-            </div>
-        </section>
+        <ul class="accordion">
+            <li class="accordion-item">
+                <div class="accordion-item-header">
+                    <h2>Título</h2>
+                    <h2 class="sign">+</h2>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe molestias nemo, odit at eligendi, rerum fugiat magni, porro minima eum recusandae. Quam, delectus voluptates. Culpa repudiandae nam quo dolore cumque!
+                </p>
+            </li>
+            <li class="accordion-item">
+                <div class="accordion-item-header">
+                    <h2>Segundo Título</h2>
+                    <h2 class="sign">+</h2>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium optio esse nulla tempora error placeat rem porro reprehenderit eveniet id nihil dolores officia, maxime cupiditate aliquid odit sit dignissimos sed.
+                </p>
+            </li>
+            <li class="accordion-item">
+                <div class="accordion-item-header">
+                    <h2>Terceiro Título</h2>
+                    <h2 class="sign">+</h2>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium optio esse nulla tempora error placeat rem porro reprehenderit eveniet id nihil dolores officia, maxime cupiditate aliquid odit sit dignissimos sed.
+                </p>
+            </li>
+            <li class="accordion-item">
+                <div class="accordion-item-header">
+                    <h2>Quarto Título</h2>
+                    <h2 class="sign">+</h2>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium optio esse nulla tempora error placeat rem porro reprehenderit eveniet id nihil dolores officia, maxime cupiditate aliquid odit sit dignissimos sed.
+                </p>
+            </li>
+        </ul>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
