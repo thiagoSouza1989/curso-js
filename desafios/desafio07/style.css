@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: #262626;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: aquamarine;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    margin-bottom: 3rem;
+}
+a{
+    padding: 1rem;
+}
+
+aside{
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    place-items: start;
+    padding: 50px;
+    /*background-color: #090909;*/
+}
+.progress-bar{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    color: #fff;
+    outline: 2px solid #7effb2;
+    outline-offset: -1px;
+}
+.progress-bar::after,
+.number{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.progress-bar::after{
+    content: '';
+    width: 110px;
+    height: 110px;
+    border-radius: inherit;
+    outline: inherit;
+}
+.number{
+    font-size: 21px;
+    font-weight: bold;
+}
+.circle{
+    stroke-dasharray: 410;
+    stroke-dashoffset: 410;
+    transform: rotate(-90deg);
+    animation: bar-fill 8s linear forwards;
+}
+@keyframes bar-fill{
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
