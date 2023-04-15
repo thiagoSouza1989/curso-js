@@ -50,6 +50,35 @@ body{
     display: none;
 }
 
+main{
+    display: grid;
+    place-items: center;
+
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px;
+}
+section{
+    padding-top: 3rem;
+}
+
+.paragraph span{
+    color: #fff;
+    display: block;
+    opacity: 0;
+    animation: reveal 0.5s forwards var(--d);
+}
+
+@keyframes reveal {
+    from {
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: none;
+    }
+}
+
 @media screen and (max-width: 600px){
     .menu{
         width: 100%;
