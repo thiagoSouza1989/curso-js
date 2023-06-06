@@ -75,6 +75,7 @@ body{
         display: inline-flex;
         align-items: center;
         cursor: pointer;
+        color: #fff;
     }
     #toggler:checked ~ .menu{
         max-height: 100%;
