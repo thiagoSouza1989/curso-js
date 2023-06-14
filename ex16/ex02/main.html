@@ -8,15 +8,19 @@
 </head>
 <body>
     <script>
-        var idade_minima = 18
-        var idade_pessoa = prompt('Digite sua idade')
-        
-        if (idade_pessoa >= idade_minima){
-            alert('Maior de idade')
-        }else{
-            alert('Menor de idade')
+        var idioma = prompt('Por favor, digite o código do idioma.')  //'es'
+
+        if (idioma == 'pt'){
+            alert('Olá')
+        } else if (idioma == 'en'){
+            alert('Hi')
+        } else if (idioma == 'fr'){
+            alert('Salut')
+        } else if (idioma == 'es'){
+            alert('Hola')
+        } else {
+            alert('Código não reconhecido')
         }
-        
     </script>
 </body>
 </html>
