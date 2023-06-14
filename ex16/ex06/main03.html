@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora avançada</title>
+
+</head>
+<body>
+    <script>
+        function soma(a, b){
+            return a + b
+        }
+        function subtracao(a, b){
+            return a - b
+        }
+        function divisao(a, b){
+            return a / b
+        }
+        function multiplicacao(a, b){
+            return a * b
+        }
+
+        var n1 = Number(prompt('Número 1'))
+        var n2 = Number(prompt('Número 2'))
+        var op = prompt('Operação')
+        
+        var res
+
+        if (op =='+'){
+            res = soma(n1, n2)
+        } else if (op =='-'){
+            res = subtracao(n1, n2)
+        } else if (op =='/'){
+            res = divisao(n1, n2)
+        } else if (op =='*'){
+            res = multiplicacao(n1, n2)
+        }
+
+        alert(res)
+    </script>
+</body>
+</html>
